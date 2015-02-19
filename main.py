@@ -45,7 +45,7 @@ def header():
     global draw
     global epd
     global image
-    imageTemp=Image.open("./shineImages/SSL_Logo_REV.jpg")
+    imageTemp=Image.open("./WistImages/SSL_Logo_REV.jpg")
     imageTemp = ImageOps.grayscale(imageTemp)
     imageTemp = ImageOps.equalize(imageTemp)
     draw.rectangle((0,0,264,176),fill=WHITE,outline=WHITE)
@@ -224,7 +224,7 @@ def comms():
 
     
 def maps():
-    USA="./shineImages/U.S.topoBW.jpg"
+    USA="./WistImages/U.S.topoBW.jpg"
     displayGraphic(USA)
     while back==False:
         buttonPress(1)
@@ -341,7 +341,7 @@ def documents():
     font=ImageFont.truetype(FONT_FILE, FONT_SIZE)
     linePosition=startPosition
     draw.rectangle((0,19,264,176),fill=WHITE,outline=WHITE)
-    fileLocation='/home/pi/Desktop/shine/shineDocuments'
+    fileLocation='/home/pi/Desktop/shine/WistDocuments'
     FileList=[f for f in listdir(fileLocation) if isfile(join(fileLocation,f))]
     select =0
     draw.rectangle((0,18,264,176),fill=WHITE,outline=WHITE)   
@@ -366,7 +366,7 @@ def documents():
                 if confirm==True:
                     confirm==False
                     print "RUN OTHER FILE"
-                    startReader("./shineDocuments/"+FileList[k])
+                    startReader("./WistDocuments/"+FileList[k])
                     documents()
             linePosition+=FONT_SIZE
         epd.display(image)
