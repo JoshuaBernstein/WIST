@@ -58,7 +58,6 @@ def display():
     global draw
     global image
     global epd
-    image=ImageOps.mirror(image)
     epd.display(image)
     epd.update()
 def selection():
