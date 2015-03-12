@@ -20,7 +20,7 @@ confirm=False
 first =True
 firstComms=True
 firstSelect=True
-ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
+ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 possible_fonts = ['/usr/share/fonts/truetype/freefont/FreeMono.ttf']  
 FONT_FILE = ''
 for f in possible_fonts:
