@@ -19,7 +19,7 @@ def main(argv):
     
 
     epd.clear()
-    file1=["./shineImages/U.S.topoBW.jpg"]
+    file1=["./WistImages/Diagram.jpg"]
     print('panel = {p:s} {w:d} x {h:d}  version={v:s}'.format(p=epd.panel, w=epd.width, h=epd.height, v=epd.version))
     for file_name in file1:
         if not os.path.exists(file_name):
