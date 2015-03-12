@@ -339,7 +339,7 @@ def documents():
     font=ImageFont.truetype(FONT_FILE, FONT_SIZE)
     linePosition=startPosition
     draw.rectangle((0,19,264,176),fill=WHITE,outline=WHITE)
-    fileLocation='/home/pi/Desktop/shine/WistDocuments'
+    fileLocation='/home/pi/Desktop/WIST/WistDocuments'
     FileList=[f for f in listdir(fileLocation) if isfile(join(fileLocation,f))]
     select =0
     draw.rectangle((0,18,264,176),fill=WHITE,outline=WHITE)   
