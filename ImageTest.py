@@ -62,7 +62,7 @@ def displayGraphic(epd,file_name):
     
 def header():
     global epd
-    imageTemp=Image.open("./shineImages/SSL_Logo_REV.jpg")
+    imageTemp=Image.open("./WistImages/SSL_Logo_REV.jpg")
     imageTemp = ImageOps.grayscale(imageTemp)
     imageTemp = ImageOps.equalize(imageTemp)
     draw.rectangle((0,0,264,176),fill=WHITE,outline=WHITE)
